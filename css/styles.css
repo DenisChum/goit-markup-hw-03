@@ -359,14 +359,10 @@ padding-right: 0;
 }
 
 
-
 .team-list .team-item + .team-item {
-    margin-right: 30px;}
+    margin-left: 30px;}
 
 
-.team-item:nth-child(3n) {
-    margin-right: 0;
-}
 
 .team-name {
 font-weight: 500;
