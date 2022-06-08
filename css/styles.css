@@ -68,10 +68,11 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
-.container.footer {
+.footer {
 padding-top: 60px;
 padding-bottom: 60px;
 }
+
 
 
 /* Header */
@@ -217,7 +218,14 @@ font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.03em;
 font-family: inherit;
+border-radius: 4px;
+padding: 6px 22px;
 }
+
+.main-list .button-item + .button-item {
+margin-left: 8px;
+}
+
 
 .button-secondary:hover,
 .button-secondary:focus {
@@ -295,10 +303,11 @@ margin-bottom: 50px;
 
 .work-list {
 display: flex;
-align-items: stretch;
 list-style-type: none;
 margin-top: 0;
 margin-bottom: 0;
+padding-left: 0;
+padding-right: 0;
 }
 
 .work-list .work-item:not(:last-child) {
@@ -339,13 +348,24 @@ margin-bottom: 0;
 
 .team-list {
 display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 list-style-type: none;
 margin-bottom: 0;
 margin-top: 0;
+padding-left: 0;
+padding-right: 0;
+
 }
 
+
+
 .team-list .team-item + .team-item {
-    margin-right: 30px;
+    margin-right: 30px;}
+
+
+.team-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .team-name {
@@ -357,6 +377,7 @@ margin-bottom: 10px;
 }
 
 /* Footer */
+
 
 .footer-main {
 background-color: var(--bg-footer-color);
@@ -396,6 +417,10 @@ color: var(--accent-color);
 .footer-list {
 list-style-type: none;
 margin: 0;
+display: inline-block;
+vertical-align: auto;
+padding-left: 0;
+margin-top: 20px;
 }
 
 /* Page portfolio */
@@ -421,6 +446,8 @@ background-color: var(--main-white-color);
 
 .main-list {
 list-style-type: none;
+display: flex;
+justify-content: center;
 }
 
 .main-tittle {
@@ -433,6 +460,8 @@ font-size: 0;
 .examples-list {
 list-style-type: none;
 letter-spacing: 0.06em;
+display: flex;
+flex-wrap: wrap;
 
 }
 
