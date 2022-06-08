@@ -537,4 +537,7 @@ margin-right: 0;
 .examples-info {
     text-align: justify;
     padding: 20px 24px;
+    border-right:1px solid var(--bg-portfolio-tables);
+    border-bottom:1px solid var(--bg-portfolio-tables);
+    border-left:1px solid var(--bg-portfolio-tables);
 }
