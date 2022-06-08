@@ -70,11 +70,6 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
-.footer {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-
 
 
 /* Header */
@@ -95,8 +90,11 @@ letter-spacing: 0.02em;
 }
 
 .nav-tittle {
-display: flex;
+display: flex ;
 margin-left: 93px;
+margin-top: 0;
+margin-bottom: 0 ;
+padding: 0;
 }
 
 
@@ -106,8 +104,8 @@ margin-left: 50px;
 
 .nav-link {
 display: block;
-padding-top: 31px;
-padding-bottom: 31px;
+padding-top: 32px;
+padding-bottom: 32px;
 color: var(--primary-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -162,6 +160,8 @@ padding: 0;
 .nav-info .info-item + .info-item {
     margin-left: 50px;
 }
+
+
 
 /* Hero */
 
@@ -284,8 +284,9 @@ font-size: 0;
 list-style-type: none;
 display: flex;
 flex-wrap: wrap;
-margin-top: 75px;
+margin-top: 0;
 padding-left: 0;
+margin-bottom: 0;
 }
 
 .benefits-list .benefits-item + .benefits-item {
@@ -294,6 +295,8 @@ padding-left: 0;
 
 .benefits-tutorial {
 background-color: var(--main-white-color);
+padding-top: 94px;
+
 }
 /* About areas of work */
 
@@ -401,6 +404,8 @@ margin-bottom: 10px;
 .footer-main {
 background-color: var(--bg-footer-color);
 color: var(--main-white-color);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .footer-adress {
@@ -409,7 +414,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 text-decoration: none;
-font-style: normal;   
+font-style: normal;  
 }
 
 .footer-adress:hover,
@@ -442,6 +447,12 @@ padding-left: 0;
 margin-top: 20px;
 }
 
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
 /* Page portfolio */
 /* Head */
 
@@ -467,8 +478,9 @@ background-color: var(--main-white-color);
 list-style-type: none;
 display: flex;
 justify-content: center;
-margin-bottom: 34px;
+padding-bottom: 50px;
 margin-top: 0;
+margin-bottom: 0;
 }
 
 .main-tittle {
