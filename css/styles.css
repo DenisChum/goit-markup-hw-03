@@ -9,6 +9,7 @@
     --bg-footer-color: #2F303A;
     --bg-portfolio-tables: #EEEEEE;
     --logo-color: #000000;
+    --border-color:#ECECEC;
 
 }
 
@@ -78,6 +79,7 @@ padding-bottom: 60px;
 /* Header */
 .page-header {
 background-color: var(--main-white-color);
+border-bottom: 1px solid var(--border-color);
 }    
 
 .main-nav {
@@ -220,6 +222,7 @@ letter-spacing: 0.03em;
 font-family: inherit;
 border-radius: 4px;
 padding: 6px 22px;
+border: none;
 }
 
 .main-list .button-item + .button-item {
@@ -273,6 +276,7 @@ font-size: 0;
 
 .benefits-item {
     width: 270px;
+
 }
 
 .benefits-list {
@@ -280,12 +284,18 @@ list-style-type: none;
 display: flex;
 flex-wrap: wrap;
 margin-top: 75px;
+padding-left: 0;
+}
+
+.benefits-list .benefits-item + .benefits-item {
+    margin-left: 30px;
 }
 
 .benefits-tutorial {
 background-color: var(--main-white-color);
 }
 /* About areas of work */
+
 
 .work {
 background-color: var(--main-white-color);
@@ -310,10 +320,16 @@ padding-left: 0;
 padding-right: 0;
 }
 
-.work-list .work-item:not(:last-child) {
-    margin-right: 30px;
 
+.work-list .work-item:not(:last-child) {
+    margin-right: 30px;}
+
+.container .team-members {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
+
 /* Our Team */
 
 .team {
@@ -325,6 +341,7 @@ color: var(--primary-text-color);
 background-color: var(--main-white-color);
 color: var(--primary-text-color);
 width: 270px;
+text-align: center;
 }
 
 .team-tittle {
@@ -370,6 +387,11 @@ font-size: 16px;
 line-height: 1.19;
 margin-top: 0;
 margin-bottom: 10px;
+}
+
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Footer */
